@@ -12,7 +12,7 @@
 <body>
     <header>
         <div class="logo__cont">
-            <img src="../assets/img/Logo_Salumeria.png" alt="logo la salumeria">
+            <a href="#"><img src="../assets/img/Logo_Salumeria.png" alt="logo la salumeria"></a>
         </div>
         <div class="header-right-cont">
             <div class="rs__cont">
@@ -30,7 +30,18 @@
                                 class="icon" alt="shopping-basket logo"></a></li>
                 </ul>
             </nav>
+            <button id="btn-toggle-navbar-mobile"><img src="../../assets/icon/menu.png" alt="icon du menu burger"></button>
         </div>
+        <nav class="navbar-mobile">
+            <ul class="navbar-mobile-link-list">
+                <li><a href="../index.html#grocery" class="navbar-mobile__link">L'épicerie</a></li>
+                <li><a href="../index.html#product" class="navbar-mobile__link">Les produits</a></li>
+                <li><a href="../index.html#team" class="navbar-mobile__link">L'équipe</a></li>
+                <li><a href="#" class="navbar-mobile__link">Le shop</a></li>
+                <li><a href="../index.html#contact" class="navbar-mobile__link">Contact</a></li>
+                <li><a href="#" class="navbar-mobile__link basket"><img src="../../assets/icon/shopping-basket.png" class="icon" alt="shopping-basket logo"></a></li>
+            </ul>
+        </nav>
     </header>
 
 
@@ -96,7 +107,7 @@
                 </li>
             </ul>
         </div>
-        <button id="product-btn" class="btn">Accéder au shop</button>
+        <a href="shop/index.html" id="product-btn" class="btn">Accéder au shop</a>
     </section>
 
     <section id="team" class="section without-padding">
