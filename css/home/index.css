@@ -28,6 +28,10 @@
     font-weight: 600;
 }
 
+#product .section__title {
+    color: white;
+}
+
 .product-background {
     position: absolute;
     top: 0;
@@ -35,6 +39,7 @@
     left: 0;
     bottom: 50%;
     background-color: var(--color-red);
+    z-index: -1;
 }
 
 .product-list {
