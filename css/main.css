@@ -6,14 +6,16 @@
     --color-green: #1C562C;
     --color-black: #161615;
 
-    --font-text: "bodoni moda";
-    --font-title: "italiana";
+    --font-text: bodoni moda;
+    --font-text-italic: bodoni moda italic;
+    --font-text-9pt: bodoni moda pt;
+    --font-title: italiana;
 }
 
 body {
     margin: 0;
     font-family: var(--font-text);
-    /* background-color: red; */
+    font-size: 16px;
 }
 
 header {
@@ -83,10 +85,10 @@ ul {
 }
 
 .btn {
-    padding: 12px 20px;
+    padding: 14px 24px;
     border: none;
     border-radius: 6px;
-    font-size: 12px;
+    font-size: 14px;
     color: var(--color-beige);
     background-color: var(--color-red);
 }
@@ -121,4 +123,52 @@ ul {
     height: 265px;
     color: var(--color-beige);
     background-color: var(--color-red-transparent);
+}
+
+h1 {
+    font-size: 65px;
+}
+
+.banner__cont h2 {
+    font-size: 32px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.footer .rs__cont img {
+    width: 30px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+.footer a:hover {
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: bodoni moda;
+    src: url(../assets/font/BodoniModa-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face {
+    font-family: bodoni moda italic;
+    src: url(../assets/font/BodoniModa-Italic-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face {
+    font-family: bodoni moda pt;
+    src: url(../assets/font/BodoniModa_9pt-Black.ttf);
+}
+
+@font-face {
+    font-family: italiana;
+    src: url(../assets/font/Italiana-Regular.ttf);
 }
