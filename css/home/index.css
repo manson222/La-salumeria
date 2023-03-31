@@ -314,6 +314,7 @@
     }
 
     .product-item {
+        width: 100%;
         background-color: var(--color-red);
         color: var(--color-beige);
     }
