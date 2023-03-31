@@ -24,7 +24,7 @@
 
 .section__sub-title {
     font-family: var(--font-text);
-    font-size: 25px;
+    font-size: 24px;
     font-weight: 600;
 }
 
@@ -56,6 +56,7 @@
     position: relative;
     width: 100%;
     height: 370px;
+    overflow: hidden;
 }
 
 .product-img-cont img {
@@ -73,7 +74,7 @@
     font-family: "bodoni moda 11pt";
     font-style: italic;
     font-size: 30px;
-    color: var(--color-beige);
+    color: white;
 }
 
 .product-text {
@@ -124,6 +125,7 @@
 }
 
 .team-name-cont h4 {
+    margin: 10px 0;
     font-family: var(--font-text-9pt);
     font-size: 22px;
     font-weight: 800;
@@ -131,6 +133,7 @@
 }
 
 .team-citation-it {
+    margin: 10px 0;
     padding-left: 30px;
     padding-right: 50px;
     font-size: 26px;
@@ -139,6 +142,7 @@
 }
 
 .team-citation-fr {
+    margin: 10px 0;
     padding-left: 30px;
     padding-right: 50px;
     font-size: 20px;
@@ -235,4 +239,175 @@
 
 .contact-schedule {
     font-size: 14px;
+}
+
+/* ===== Media querries ===== */
+
+@media all and (max-width: 1199.98px) {
+    .section {
+        padding: 40px;
+    }
+
+    .section__sub-title {
+        font-size: 21px;
+    }
+
+    #grocery p {
+        font-size: 14px;
+    }
+
+    .team-name-cont {
+        margin-top: 45px;
+    }
+
+    .team-citation-it {
+        margin: 10px 0;
+        font-size: 22px;
+    }
+
+    .team-citation-fr {
+        margin: 10px 0;
+        font-size: 18px;
+    }
+
+    .team-description {
+        margin: 10px 0;
+        font-size: 13px;
+    }
+
+    .section.contact .section__content {
+        gap: 30px;
+        padding: 30px;
+    }
+
+    .section.contact .section__content>div {
+        width: 100%;
+    }
+
+    .section__content-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section__content-right>div {
+        width: 75%;
+    }
+}
+
+@media all and (max-width: 991.98px) {
+    .section__content {
+        flex-direction: column;
+    }
+
+    .section__content>div {
+        width: 100%;
+    }
+
+    .product-background {
+        display: none;
+    }
+
+    .product-list {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .product-item {
+        background-color: var(--color-red);
+        color: var(--color-beige);
+    }
+
+    .team-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .team-item {
+        flex-direction: column;
+        width: 600px;
+    }
+    
+    .team-item:nth-child(even) {
+        flex-direction: column;
+    }
+    
+    .team-item:nth-child(even) .team-description-cont {
+        align-items: flex-start;
+        text-align: start;
+    }
+
+    .team-item>div {
+        width: 100%;
+    }
+
+    .team-name-cont {
+        margin-top: 0;
+        padding: 5px 0;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media all and (max-width: 767.98px) {
+    .section {
+        padding: 40px 30px;
+    }
+
+    .product-img-cont {
+        height: 340px;
+    }
+
+    .team-item {
+        width: 100%;
+    }
+
+    .team-img-cont {
+        height: 400px;
+    }
+}
+
+@media all and (max-width: 575.98px) {
+    .section {
+        padding: 40px 20px;
+    }
+
+    .grocery-text:last-child {
+        display: none;
+    }
+    
+    .product-img-cont {
+        height: 260px;
+    }
+
+    .team-item {
+        width: 90%;
+    }
+
+    .team-img-cont {
+        height: 300px;
+    }
+
+    .team-name-cont h4 {
+        margin: 0;
+    }
+
+    .section__content-right>div {
+        width: 95%;
+    }
+
+    .contact-address-cont {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact-address-cont br {
+        display: none;
+    }
+
+    .contact-address-cont p {
+        margin: 0;
+    }
 }

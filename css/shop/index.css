@@ -73,3 +73,73 @@ img {
     align-self: flex-end;
     background-color: var(--color-green);
 }
+
+/* ===== Media querries ===== */
+
+@media all and (max-width: 991.98px) {
+    .products__cont {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 250px));
+        gap: 30px;
+    }
+
+    .card-img-cont {
+        height: 250px;
+    }
+
+    .card-img-cont img {
+        top: -15px;
+    }
+}
+
+@media all and (max-width: 767.98px) {
+    .logo__cont {
+        width: 200px;
+    }
+
+    .section {
+        padding: 30px;
+    }
+
+    .products__cont {
+        grid-template-columns: repeat(auto-fit, 230px);
+        gap: 25px;
+    }
+}
+
+@media all and (max-width: 575.98px) {
+    .section {
+        padding: 30px 20px;
+    }
+
+    .products__cont {
+        grid-template-columns: repeat(auto-fit, 160px);
+        gap: 15px;
+    }
+
+    .card-img-cont {
+        height: 170px;
+    }
+
+    .card-img-cont img {
+        top: 0;
+    }
+
+    .card-product-name-cont {
+        flex-direction: column;
+    }
+
+    .card-product-name-cont p {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .card-description {
+        font-size: 14px;
+    }
+
+    .card .btn {
+        align-self: center;
+        padding: 10px 14px;
+        font-size: 12px;
+    }
+}
