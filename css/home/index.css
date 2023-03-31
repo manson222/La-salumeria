@@ -45,6 +45,7 @@
 .product-list {
     display: flex;
     justify-content: space-evenly;
+    gap: 15px;
 }
 
 .product-item {
