@@ -74,6 +74,8 @@ img {
     background-color: var(--color-green);
 }
 
+/* ===== Media querries ===== */
+
 @media all and (max-width: 991.98px) {
     .products__cont {
         grid-template-columns: repeat(auto-fit, minmax(150px, 250px));
@@ -90,6 +92,10 @@ img {
 }
 
 @media all and (max-width: 767.98px) {
+    .logo__cont {
+        width: 200px;
+    }
+
     .section {
         padding: 30px;
     }
@@ -101,10 +107,6 @@ img {
 }
 
 @media all and (max-width: 575.98px) {
-    body {
-        background-color: gray;
-    }
-    
     .section {
         padding: 30px 20px;
     }
